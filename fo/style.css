@@ -1,0 +1,86 @@
+body{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aqua;
+    margin-left: -10px;
+    margin-right:-10px;
+}
+
+.container{
+    display: flex;
+}
+.link a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon img {
+    height: 30px;
+}
+
+.profile {
+    background-color: rgb(7, 148, 101);
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    color: rgb(2, 230, 230);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#about-me {
+    display: flex;
+}
+
+.pic img{
+    width :500px;
+}
+
+h1 {
+    color: aqua;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.allskill{
+    display: flex;
+}
+
+.skill img{
+    height: 300px;
+}
+
+.skill {
+    border: 1px solid lightgrey;
+    margin-left: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 20px grey;
+}
+
+h2{
+    color: aqua;
+}
+
+.allrecom{
+    display: flex;
+}
+
+.recom {
+    border: 1px solid lightgrey;
+    margin-left: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 20px grey;
+}
+
+span{
+    color: rgb(1, 87, 87);
+    font-size: 30px;
+}

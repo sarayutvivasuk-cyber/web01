@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฎนครปฐม</h1>
+        <p class="welcome">ยินดีต้อนรับ</p>
+        <P id="message">สาขาวิทยาการคอมพิวเตอร์</P>
+        <P></P>
+        <p></p>
+        <p></p>
+        <img src="https://cb-courses.npru.ac.th/pluginfile.php/1/core_admin/logo/0x200/1780647799/logo%20credit%20bank3.png">
+        <script>
+            const imgElem=document.querySelector("img");
+            imgElem.src="https://sc.npru.ac.th/main/img/logo.png";
+            imgElem.setAttribute("height","200");
+            const element1=document.getElementById("message");
+            element1.innerHTML="<strong>Computer Science</strong>";
+
+            const element2=document.querySelector(".welcome");
+            element2.textContent+= "NPRU";
+
+            const element3=document.querySelectorAll("p");
+            element3.forEach((element) =>{
+                element.textContent = "xxxxxxxxxxxx";
+                element.style.color = "red";
+                element.style.fontSize ="20px";
+            });
+
+            const newElem = document.createElement("h2");
+            newElem.textContent = "Computer Science @NPRU";
+            const lastElem=document.body.appendChild(newElem);
+            lastElem.remove
+        </script>
+    </body>
+
+    </html>

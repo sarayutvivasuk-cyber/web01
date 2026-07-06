@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="text" id="uname" placeholder="กรุณาใส่ชื่อผู้ใช้">
+        <button>Check</button>
+        <input type="email" id="email" placeholder="กรุณาใส่อีเมล">
+        <input type="password" id="pwd" placeholder="กรุณาใส่รหัส">
+
+        <p id="show"></p>
+
+        <script>
+            const showMess = document.getElementById("show");
+            const button1 = document.querySelector("button");
+
+            button1.addEventListener("click", function(){
+                alert("Welcome to NPRU");
+            });
+            button1.addEventListener("mouseover", ()=>{
+                button1.style.backgroundColor = "grey";
+            });
+            button1.addEventListener("mouseout", ()=>{
+                button1.style.backgroundColor = "";
+            });
+            const unameInput = document.getElementById("uname");
+            unameInput.addEventListener("input", ()=>{
+                showMess.textContent = "Welcome " + unameInput.value + " to NPRU";
+            });
+            const emailInput = document.getElementById("email");
+            emailInput.addEventListener("input", ()=>{
+                if(emailInput.value.includes("@")){
+                    showMess.textContent = "Correct Email";
+                } else {
+                    showMess.textContent = "Email ต้องมีเครื่องหมาย@";
+                }
+            });
+
+            const pwdInput = document.getElementById("pwd");
+            pwdInput.addEventListener("input", ()=>{
+                if(pwdInput.value.length < 8){
+                    showMess.textContent = "รหัสผ่านต้อง 8 ตัวอักษรขึ้นไป";
+                } else {
+                    showMess.textContent = "รหัสผ่านเป็นไปตามเกณฑ์ความยาว: " + pwdInput.value.length;
+                }
+            });
+        </script>
+    </body>
+</html>

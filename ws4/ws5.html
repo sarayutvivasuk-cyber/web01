@@ -1,0 +1,31 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฏนครปฐม</h1>
+        <input id="score" type="text" placeholder="ใส่คะแนนเพื่อคำนวณเกรด">
+        <button id="submitBtn">submit</button>
+        <h1 id="grade">Grade: </h1>
+        
+        <script>
+            document.getElementById("submitBtn").addEventListener("click", function() {
+                const score = parseFloat(document.getElementById("score").value);
+                const gradeElement = document.getElementById("grade");
+                
+                let result = "";
+                
+                if (score >= 80) { result = "A"; }
+                else if (score >= 75) { result = "B+"; }
+                else if (score >= 70) { result = "B"; }
+                else if (score >= 65) { result = "C+"; }
+                else if (score >= 60) { result = "C"; }
+                else if (score >= 55) { result = "D+"; }
+                else if (score >= 50) { result = "D"; }
+                else { result = "F"; }
+                
+                gradeElement.innerText = "Grade: " + result;
+            });
+        </script> 
+    </body> 
+</html>

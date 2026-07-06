@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            textarea {
+                width: 300px;
+                height: 150px;
+                resize: both;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฏนครปฐม</h1>
+        <textarea id="myText"></textarea>
+        
+        <p>Character count: <span id="count">0</span></p>
+        <button id="btn">sumbit</button>
+
+        <script>
+            document.getElementById("btn").addEventListener("click", function() {
+                const text = document.getElementById("myText").value;
+                document.getElementById("count").innerText = text.length;
+            });
+        </script> 
+    </body> 
+</html>

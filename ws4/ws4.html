@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <h1 id="title">มหาวิทยาลัยราชภัฏนครปฐม</h1>
+
+        <input id="input">
+
+        <button id="change">เปลี่ยนข้อความ</button>
+
+
+
+        <script>
+
+            document.getElementById("change").addEventListener('click', function() {
+
+                const text = document.getElementById("input").value;
+
+                document.getElementById("title").innerText = text;
+
+            });
+
+        </script>
+
+    </body>
+
+</html>
